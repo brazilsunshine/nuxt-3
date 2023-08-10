@@ -51,15 +51,15 @@
 
 <script setup>
     // <script setup> allows you to define variables, functions, and logic in a more concise way.
-    import Counter from "./components/Counter";
-    import { useMouse } from "./composables/useMouse";
+    import Counter from "../components/Counter";
+    import { useMouse } from "../composables/useMouse";
 
     /**
-     * Get x, y values from
+     * Get x, y values from useMouse.vue
      */
     const { x, y } = useMouse()
 
-    const users = ref([]) // returns an array
+    const users = ref([])
     // ref is a function that is used to create a reactive reference to a value.
     // Reactive means that changes to the value will automatically trigger updates in the user interface
 
